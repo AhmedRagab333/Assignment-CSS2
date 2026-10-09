@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+  <label for="nav-toggle" class="menu-btn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </label>
+  <label for="nav-toggle" class="overlay"></label>
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <img class="avatar" src="images/profile.jpg" alt="Portrait of the developer">
+      <h1>My Portfolio</h1>
+      <p class="role">Front-End Developer</p>
+      <span class="title-line"></span>
+    </div>
+
+    <nav class="side-nav">
+      <a class="nav-link active" href="#portfolio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5Z"/></svg>
+        Portfolio
+      </a>
+      <a class="nav-link" href="#about">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"/></svg>
+        About Me
+      </a>
+      <a class="nav-link" href="#contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4V6Zm8 7 8-5H4l8 5Zm0 2-8-5v8h16v-8l-8 5Z"/></svg>
+        Contact
+      </a>
+    </nav>
+
+    <div class="follow">
+      <p>Follow Me</p>
+      <div class="socials">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6L16 12h-3V10c0-.6.4-1 1-1Z"/></svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg viewBox="0 0 24 24"><path d="M19.6 7.5c.7-.4 1.2-1.1 1.4-1.9-.6.4-1.4.7-2.1.8A3.3 3.3 0 0 0 13 9.4c0 .3 0 .5.1.8-2.7-.1-5.2-1.4-6.8-3.5-.3.5-.4 1.1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 3 2.6 3.3-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.4 1.7 2.4 3.2 2.4A6.6 6.6 0 0 1 4 16.6 9.3 9.3 0 0 0 9 18c6.1 0 9.4-5 9.4-9.4v-.4c.6-.5 1.2-1.1 1.6-1.7-.6.3-1.2.4-1.8.5Z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M7.4 9H4.7v10.3h2.7V9ZM6 4.3A1.6 1.6 0 1 0 6 7.5 1.6 1.6 0 0 0 6 4.3ZM19.3 13.2c0-3-1.6-4.4-3.7-4.4a3.2 3.2 0 0 0-2.9 1.6h-.1V9H10v10.3h2.7v-5.1c0-1.3.2-2.6 1.9-2.6s1.7 1.5 1.7 2.7v5h2.7V13.2Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section id="portfolio" class="section">
+      <h2>My <span>Portfolio</span></h2>
+
+      <div class="filters">
+        <input type="radio" name="filter" id="filter-all" checked>
+        <input type="radio" name="filter" id="filter-design">
+        <input type="radio" name="filter" id="filter-photos">
+        <div class="filter-bar">
+          <label for="filter-all">ALL</label>
+          <label for="filter-design">Design</label>
+          <label for="filter-photos">Photos</label>
+        </div>
+
+        <div class="grid">
+          <article class="card cat-design">
+            <div class="card-media">
+              <img src="images/web-design.jpg" alt="Laptop showing a website layout">
+            </div>
+            <h3>Web Design</h3>
+            <p>Modern and responsive website design for a creative agency.</p>
+          </article>
+
+          <article class="card cat-design">
+            <div class="card-media">
+              <img src="images/minimal.jpg" alt="Potted plant on a pink background">
+            </div>
+            <h3>Minimal Design</h3>
+            <p>Clean and minimal layout for product landing page.</p>
+          </article>
+
+          <article class="card cat-photos">
+            <div class="card-media">
+              <img src="images/photography.jpg" alt="Vintage camera on a dark surface">
+            </div>
+            <h3>Photography</h3>
+            <p>High quality photography portfolio for personal brand.</p>
+          </article>
+
+          <article class="card cat-design">
+            <div class="card-media">
+              <img src="images/mobile.jpg" alt="Smartphone mockups with a purple app">
+            </div>
+            <h3>Mobile App</h3>
+            <p>User friendly mobile application design concept.</p>
+          </article>
+
+          <article class="card cat-design">
+            <div class="card-media">
+              <img src="images/dashboard.jpg" alt="Desktop monitors showing a dashboard">
+            </div>
+            <h3>Dashboard UI</h3>
+            <p>Admin dashboard design with modern dashboard UI.</p>
+          </article>
+
+          <article class="card cat-photos">
+            <div class="card-media">
+              <img src="images/branding.jpg" alt="Branding stationery laid out on a desk">
+            </div>
+            <h3>Branding</h3>
+            <p>Brand identity design for startup business.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-wrap">
+      <div class="about-card">
+        <h2>About <span>Me</span></h2>
+        <p class="intro">
+          Hello! I'm a front-end developer passionate about building beautiful and functional websites.
+          I love turning ideas into real products using HTML &amp; CSS.
+        </p>
+
+        <h3 class="skills-title">My Skills</h3>
+        <div class="skill">
+          <div class="skill-top"><span>HTML</span><span>90%</span></div>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>CSS</span><span>80%</span></div>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>UI/UX Design</span><span>75%</span></div>
+          <div class="bar"><span style="width:75%"></span></div>
+        </div>
+
+        <a class="btn" href="images/resume.pdf" download>Download Resume</a>
+      </div>
+
+      <div class="pricing">
+        <h2>Pricing <span>Plans</span></h2>
+        <div class="plans">
+          <article class="plan">
+            <div class="plan-icon">
+              <svg viewBox="0 0 24 24"><path d="M7 3h10l1 4H6l1-4Zm-2 6h14l-1.2 11.2A2 2 0 0 1 15.8 22H8.2a2 2 0 0 1-2-1.8L5 9Zm7 2.5A2.5 2.5 0 1 0 14.5 14 2.5 2.5 0 0 0 12 11.5Z"/></svg>
+            </div>
+            <h3>Basic</h3>
+            <p class="price">$19 <small>/ mo</small></p>
+            <ul>
+              <li>1 Website</li>
+              <li>Responsive Design</li>
+              <li>Basic Support</li>
+            </ul>
+            <a class="btn outline" href="#contact">Sign Up</a>
+          </article>
+
+          <article class="plan featured">
+            <span class="badge">POPULAR</span>
+            <div class="plan-icon">
+              <svg viewBox="0 0 24 24"><path d="m12 3 2.1 6.4H21l-5.3 3.9 2 6.2L12 16.6 6.3 19.5l2-6.2L3 9.4h6.9L12 3Z"/></svg>
+            </div>
+            <h3>Pro</h3>
+            <p class="price">$49 <small>/ mo</small></p>
+            <ul>
+              <li>5 Websites</li>
+              <li>Responsive Design</li>
+              <li>Priority Support</li>
+              <li>Source Files</li>
+            </ul>
+            <a class="btn" href="#contact">Sign Up</a>
+          </article>
+
+          <article class="plan">
+            <div class="plan-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3 8 8H5l3.5 3.2L7 17l5-3 5 3-1.5-5.8L19 8h-3l-4-5Zm0 14.2-3.2 1.9.8-3.7-2.6-2.2h3.3L12 9.6l1.7 3.6h3.3l-2.6 2.2.8 3.7L12 17.2Z"/></svg>
+            </div>
+            <h3>Premium</h3>
+            <p class="price">$99 <small>/ mo</small></p>
+            <ul>
+              <li>Unlimited Websites</li>
+              <li>Responsive Design</li>
+              <li>24/7 Support</li>
+              <li>Source Files</li>
+            </ul>
+            <a class="btn outline" href="#contact">Sign Up</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact <span>Me</span></h2>
+      <div class="contact-layout">
+        <div class="contact-cards">
+          <article class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4V6Zm8 7 8-5H4l8 5Z"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p>info@example.com</p>
+          </article>
+          <article class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/></svg>
+            </div>
+            <h3>Location</h3>
+            <p>Cairo, Egypt</p>
+          </article>
+          <article class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.6 3.8 9 6.1a1.5 1.5 0 0 1 0 2.1l-1.2 1.2a12 12 0 0 0 6.8 6.8l1.2-1.2a1.5 1.5 0 0 1 2.1 0l2.3 2.4a1.5 1.5 0 0 1 0 2.1l-1.4 1.4c-.8.8-2 .9-3.1.5A18.6 18.6 0 0 1 4.1 8.4c-.4-1.1-.3-2.3.5-3.1L6 3.8a1.5 1.5 0 0 1 2.1 0 1 1 0 0 1-.5 0Z"/></svg>
+            </div>
+            <h3>Phone</h3>
+            <p>+20 123 456 7890</p>
+          </article>
+        </div>
+
+        <form class="contact-form" action="#" method="get">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button class="btn" type="submit">Send Message
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 21 4l-6.5 16-2.7-6.3L3 11.5Z"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>About Me</h3>
+        <p>I'm a front-end developer who loves creating beautiful and functional web experiences. I focus on writing clean code and creating great user experiences.</p>
+        <div class="socials light">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6L16 12h-3V10c0-.6.4-1 1-1Z"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M19.6 7.5c.7-.4 1.2-1.1 1.4-1.9-.6.4-1.4.7-2.1.8A3.3 3.3 0 0 0 13 9.4c0 .3 0 .5.1.8-2.7-.1-5.2-1.4-6.8-3.5-.3.5-.4 1.1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 3 2.6 3.3-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.4 1.7 2.4 3.2 2.4A6.6 6.6 0 0 1 4 16.6 9.3 9.3 0 0 0 9 18c6.1 0 9.4-5 9.4-9.4v-.4c.6-.5 1.2-1.1 1.6-1.7-.6.3-1.2.4-1.8.5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M7.4 9H4.7v10.3h2.7V9ZM6 4.3A1.6 1.6 0 1 0 6 7.5 1.6 1.6 0 0 0 6 4.3ZM19.3 13.2c0-3-1.6-4.4-3.7-4.4a3.2 3.2 0 0 0-2.9 1.6h-.1V9H10v10.3h2.7v-5.1c0-1.3.2-2.6 1.9-2.6s1.7 1.5 1.7 2.7v5h2.7V13.2Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Recent Blog Posts</h3>
+        <a class="post" href="#portfolio">
+          <img src="images/blog-1.jpg" alt="Laptop with code on the screen">
+          <div>
+            <strong>How to build a responsive website</strong>
+            <span>May 10, 2024</span>
+          </div>
+        </a>
+        <a class="post" href="#portfolio">
+          <img src="images/blog-2.jpg" alt="Abstract CSS layout graphic">
+          <div>
+            <strong>CSS Grid Layout Guide</strong>
+            <span>April 28, 2024</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Popular Tags</h3>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Design</span>
+          <span>UI/UX</span>
+          <span>Responsive</span>
+          <span>Frontend</span>
+          <span>Web Design</span>
+        </div>
+      </div>
+    </div>
+    <p class="copy">&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
